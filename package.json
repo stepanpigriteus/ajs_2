@@ -1,10 +1,9 @@
 {
   "name": "@stepanpigriteus/ajs_2",
   "version": "1.0.0",
-  "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -15,5 +14,18 @@
   "bugs": {
     "url": "https://github.com/stepanpigriteus/ajs_2/issues"
   },
-  "homepage": "https://github.com/stepanpigriteus/ajs_2#readme"
+  "homepage": "https://github.com/stepanpigriteus/ajs_2#readme",
+  "dependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "babel-loader": "^9.1.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {},
+  "description": ""
 }
